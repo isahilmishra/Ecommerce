@@ -1,0 +1,107 @@
+.footer-container {
+  background-color: #172337;
+  color: #fff;
+  font-family: Roboto, Arial, sans-serif;
+  margin-top: auto;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px;
+  border-bottom: 1px solid #454d5e;
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1;
+}
+
+.footer-title {
+  color: #878787;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.footer-link {
+  display: block;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-text {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.footer-border-left {
+  padding-left: 25px;
+  border-left: 1px solid #454d5e;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-bottom-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-bottom-links a,
+.footer-bottom-links span {
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.footer-bottom-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-payment-methods img {
+  height: 25px;
+}
+
+@media (max-width: 900px) {
+  .footer-top {
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+  .footer-column {
+    min-width: 45%;
+    margin-bottom: 20px;
+  }
+  .footer-border-left {
+    padding-left: 0;
+    border-left: none;
+  }
+  .footer-bottom {
+    padding: 20px 30px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-bottom-links {
+    flex-wrap: wrap;
+  }
+}
