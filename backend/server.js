@@ -19,7 +19,10 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: process.env.CLIENT_URL ? [process.env.CLIENT_URL, 'http://localhost:5173', 'http://127.0.0.1:5173'] : ['http://localhost:5173', 'http://127.0.0.1:5173'],
+  origin: function (origin, callback) {
+    // Dynamically allow any origin (foolproof for portfolio apps)
+    callback(null, true);
+  },
   credentials: true
 }));
 app.use(express.json());
